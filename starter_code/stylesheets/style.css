@@ -88,16 +88,22 @@ a{
 }
 .navbar-logo-menu{
     display: flex;
+    align-items: center;
 }
 .navbar-logo{
     height: 1.5rem;
+    margin-right: 2.75rem;
 }
 .navbar-list{
-    display: none;
+    gap: 1.5rem;
+}
+.navbar-link{
+    font-weight: 600;
 }
 .navbar-connection{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 1.5rem;
 }
 .btn-navbar{
@@ -113,6 +119,12 @@ a{
 .navbar-icons{
     height: 1.25rem;
     width:  1.25rem;
+}
+.login-container{
+    /* background-color: rgb(84, 35, 218); */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 .hero-content{
     padding: 1.5rem 1rem;
@@ -342,6 +354,9 @@ a{
     line-height: 125%;
     text-align: center;
 }
+.navbar-list, .login-container{
+    display: none;
+}
 @media (min-width: 425px) {
     .hero-title{
         margin-bottom: 1.5rem;
@@ -425,6 +440,10 @@ a{
         display: flex;
         justify-content: space-between;
     }
+    .footer-list-item{
+        display: flex;
+        align-items: center;
+    }
     .network-list{
         justify-content: flex-start;
         gap: 4rem;
@@ -432,4 +451,73 @@ a{
     .copywright{
         text-align: left;
     }
+}
+@media (min-width: 1024px) {
+    .navbar-list, .login-container{
+        display: flex;
+    }
+    .navbar{
+        /* background-color:green; */
+    }
+    .navbar-logo-menu{
+        /* background-color: rgb(15, 9, 103); */
+    }
+    .navbar-connection{
+        /* background-color: crimson; */
+    }
+    .btn-burger{
+        display: none;
+    }
+    .btn-small{
+        margin-bottom: 0;
+        padding: 0 1.5rem;
+    }
+    .hero-content {
+        padding: 3rem 2.75rem 8.25rem 2.75rem;
+        width: 55%;
+        text-align: left;
+    }
+    .hero-title{
+        margin-bottom: 6.5rem;
+        width: 100%;
+        font-size: 5rem;
+    }
+    .hero-text{
+        font-size: 1.5rem;
+    }
+    .hero-image {
+        left: 0;
+        top: -4.5rem;
+        height: 22rem;
+    }
+    .statistics-title {
+        font-size: 3rem;
+    }
+    .statistics-text{
+        font-size: 1.25rem;
+    }
+    .purple-accent {
+        font-size: 3.75rem;
+    }
+    .calltoaction-title {
+        font-size: 3rem;
+    }
+    .calltoaction-btn{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .btn-max-size{
+        margin-bottom: 0;
+        max-width: 12rem;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .footer {
+        padding: 2.125rem 2.75rem;
+    }
+}
+@media (min-width: 1440px) {
+
 }
