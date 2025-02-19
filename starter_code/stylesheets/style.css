@@ -48,16 +48,6 @@ table {
 	border-spacing: 0;
 }
 /* Variables */
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
 :root{
     /* Color */
     --bg-purple: hsl(302, 77%, 19%);
@@ -84,18 +74,12 @@ body{
     background-color: var(--bg-purple);
     color: var(--text-white);
     font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /**/
-    overflow-x: hidden;
-    /**/
 }
 a{
     color: var(--text-white);
     text-decoration: none;
 }
 .navbar{
-    /* */
-    /* background-color: coral; */
-    /* */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,16 +107,12 @@ a{
     height: 1.5rem;
     width: 1.5rem;
     background-color: transparent;
-    /* background-color: brown; */
     border: none;
     cursor: pointer;
 }
 .navbar-icons{
     height: 1.25rem;
     width:  1.25rem;
-}
-.hero{
-
 }
 .hero-content{
     padding: 1.5rem 1rem;
@@ -149,9 +129,6 @@ a{
 .text-yellow{
     font-weight: 700;
     color: var(--paragraph-yellow);
-}
-.hero-buttons{
-
 }
 .btn{
     position: relative;
@@ -193,8 +170,8 @@ a{
 .hero-image-container{
     z-index: 1;
     position: relative;
-    /* min-height: 18.5rem; */
     min-height: 79vw;
+    overflow: hidden;
 }
 .hero-image{
     z-index: 1;
@@ -321,8 +298,6 @@ a{
     opacity: 0.2;
 }
 .footer-list-item{
-    /* display: flex;
-    align-items: center; */
     margin-bottom: 1.25rem;
     font-size: 0.8rem;
     font-weight: 700;
@@ -367,27 +342,10 @@ a{
     text-align: center;
 }
 @media (min-width: 425px) {
-    .navbar-logo{
-        height: 2rem;
-    }
-    .navbar-connection{
-        gap: 1rem;
-    }
-    .btn-navbar{
-        height: 2rem;
-        width: 2rem;
-    }
-    .navbar-icons{
-        height: 1.75rem;
-        width: 1.75rem;
-    }
     .hero-title{
         margin-bottom: 1.5rem;
         font-size: 2.5rem;
         font-weight: 600;
-    }
-    .statistics-title{
-        font-size: 2.075rem;
     }
     .statistics-text{
         padding-left: 1.5rem;
@@ -398,21 +356,79 @@ a{
     }
 }
 @media (min-width: 768px) {
-    .navbar{
-        padding: 3.5rem 3rem;
+    .hero{
+        display: flex;
+        background-image: url('../images/background-singup.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    .navbar-logo{
-        height: 3rem;
+    .hero-content{
+        flex-shrink: 1;
+        padding: 3rem 1.5rem 7rem 1.5rem;
+        width: 55%;
+        text-align: left;
     }
-    .navbar-connection{
-        gap: 3rem;
+    .hero-title{
+        width: 80%;
+        font-size: 3.75rem;
+        font-weight: 700;
     }
-    .btn-navbar{
-        height: 3rem;
-        width: 3rem;
+    .hero-text{
+        width: 80%;
+        font-size: 1.25rem;
+        line-height: 120%;
     }
-    .navbar-icons{
-        height: 2.25rem;
-        width: 2.25rem;
+    .hero-image-container{
+        display: flex;
+        align-items: center;
+        width: 45%;
+        min-height: 100%;
+    }
+    .hero-image{
+        flex-shrink: 1;
+        position: relative;
+        left: 8rem;
+        top:-6rem;
+        height: 17rem;
+        width: auto;
+    }
+    .customers-text{
+        font-size: 1rem;
+    }
+    .logo-margin{
+        margin-bottom: 0;
+    }
+    .statistics{
+        padding: 3rem 2.75rem 0.5rem 2.75rem;
+    }
+    .statistics-title{
+        margin-bottom: 2rem;
+    }
+    .statistics-list{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .notabene{
+        text-align: left;
+        align-self: flex-end;
+    }
+    .calltoaction{
+        padding: 2.5rem 5rem;
+    }
+    .footer{
+        padding: 2.125rem 1.5rem;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .network-list{
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+    .copywright{
+        text-align: left;
     }
 }
